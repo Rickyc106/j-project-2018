@@ -34,7 +34,7 @@ def motor_stop():
 
 # Turns forwards then turns backwards. Repeats until process dies.
 def control():
-        while 1:
+        for i in range(2):
                 for x in range(100):
                         l_pwm.ChangeDutyCycle(x)
                         r_pwm.ChangeDutyCycle(x)
